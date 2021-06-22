@@ -2,13 +2,13 @@
 /* CSS Document */
 	
 	body {
-	background-color: #FF1616;
+	background-color: #11B093;
 	text-align: center;
 	}
 	
 	/* Adds same background color to the top navigation */
 	.topnav {
-		background-color: #FF1616;
+		background-color: #3BB200;
 		overflow: hidden;
 		border: solid;
 	}
@@ -70,6 +70,16 @@
 		font-weight: 700;
 	}
 
+	.form input{
+		border: 2px solid black;
+		cursor: pointer;
+	}
+
+	.form select{
+		border: 2px solid black;
+		cursor: pointer;
+	}
+
 	.map{
 		height: 225;
 		width: 355;
@@ -99,4 +109,41 @@
     height: 150px;
 	}
 	
+	button {
+		height: 50px;
+		width: 110px;
+		font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		border: 2px solid black; 
+		background-color: #ffdb23;
+		border-color: #000000;
+		cursor: pointer;
+		
+	}
+
+	button:hover{
+		background-color: #ddd;
+		color: black;
+	}
+
+	iframe{
+		height:250px;
+		width:80%;
+	}	
+
+
+	table, th, td {
+  	border: 2px solid black;
+  	border-collapse: collapse;
+	}
+	th, td {
+  	padding: 15px;
+  	text-align: center;
+	}
+	#t01 th {
+  	background-color: black;
+  	color: white;
+	}
 	
