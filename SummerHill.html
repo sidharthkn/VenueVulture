@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>VenueVulture</title>
+<link href="VenueVulture.css" rel="stylesheet" type="text/css">
+<style type ="text/javascript"></style>	
+</head>
+	
+<div class="topnav">
+  <h1>VENUEVULTURE</h1>
+	<a> Profile </a>
+	<a> Timetable </a>
+</div>
+	
+<body>
+	<h2> SUMMER HILL COURTS </h2>
+	<h3> Darrell Jackson Gardens, Summer Hill</h3>
+	<div id="map"></div>
+	
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.9647478081383!2d151.1343167151281!3d-33.890561727619875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12baa1dad837eb%3A0x59c5c2d28b893cd4!2sSummer%20Hill%20Tennis%20Courts!5e0!3m2!1sen!2sau!4v1624231082623!5m2!1sen!2sau" width="355" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	<!--<script>
+	function initMap() {
+		var location = {lat: -33.890607, lng: 151.136520}
+		var map = new google.maps.Map(document.getElementById("map"), {
+			zoom: 4,
+			center: location
+		});
+		var marker = new google.maps.Marker({
+			position: location,
+			map: map
+		});
+	}
+	</script>-->
+	
+	
+</body>	
+
+<div class="form" id="bookpay"> 
+	<a> What Time? </a>
+	<br>		
+	<input type="datetime" class="bookTime">
+	<br>
+	<br>
+	<a> Number of People: </a>
+	<br>
+	<input type="text" class="bookNum">
+	<br>
+	<br>
+	<a> Payment Option: </a>
+	<br>
+	<select class="bookPay">
+    <option value="Method 1">····5147</option>
+    <option value="Method 2">····2943</option>
+    <option value="Method 3">····4462</option>
+  	</select>
+	<br>
+	<br>
+	<h3> Total Cost: </h3>
+	<!-- To be added in late version -->
+	<button> Book! </button>
+</div>
+</html>

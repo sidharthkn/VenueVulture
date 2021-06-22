@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>VenueVulture</title>
+<link href="VenueVulture.css" rel="stylesheet" type="text/css">
+<style type ="text/javascript"></style>	
+</head>
+	
+<div class="topnav">
+  <h1>VENUEVULTURE</h1>
+	<a> Profile </a>
+	<a> Timetable </a>
+</div>
+	
+<body>
+	<h2> GLEBE COURTS </h2>
+	<h3> ST. James Park, John Street, Glebe</h3>
+	<div id="map"></div>
+	
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13249.451018519701!2d151.1843698!3d-33.8803102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbd489cf4b150bd65!2sGlebe%20Tennis%20Courts!5e0!3m2!1sen!2sau!4v1624243724854!5m2!1sen!2sau" width="355" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	<!--<script>
+	function initMap() {
+		var location = {lat: -33.890607, lng: 151.136520}
+		var map = new google.maps.Map(document.getElementById("map"), {
+			zoom: 4,
+			center: location
+		});
+		var marker = new google.maps.Marker({
+			position: location,
+			map: map
+		});
+	}
+	</script>-->
+	
+	
+</body>	
+
+<div class="form" id="bookpay"> 
+	<a> What Time? </a>
+	<br>		
+	<input type="datetime" class="bookTime">
+	<br>
+	<br>
+	<a> Number of People: </a>
+	<br>
+	<input type="text" class="bookNum">
+	<br>
+	<br>
+	<a> Payment Option: </a>
+	<br>
+	<select class="bookPay">
+    <option value="Method 1">····5147</option>
+    <option value="Method 2">····2943</option>
+    <option value="Method 3">····4462</option>
+  	</select>
+	<br>
+	<br>
+	<h3> Total Cost: </h3>
+	<!-- To be added in late version -->
+	<button> Book! </button>
+</div>
+</html>
