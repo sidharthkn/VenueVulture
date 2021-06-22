@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<!-- Sidharth KN, v0.1: Minor styling and front page added-->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>VenueVulture</title>
+<link href="VenueVulture.css" rel="stylesheet" type="text/css">
+<script type="application/javascript">
+	
+	$("#profileImage").click(function(e) {
+    $("#imageUpload").click();
+	});
+
+	function fasterPreview( uploader ) {
+    if ( uploader.files && uploader.files[0] ){
+          $('#profileImage').attr('src', 
+             window.URL.createObjectURL(uploader.files[0]) );
+    	}
+	}
+
+	$("#imageUpload").change(function(){
+    	fasterPreview( this );
+	});
+	
+	</script>	
+</head>
+	
+<div class="topnav">
+  <h1>VENUEVULTURE</h1>
+	<a href="Timetable.html"> Timetable </a>
+	<a href="HomePage.html"> Home </a>
+	
+</div>
+	
+<body>
+	<h2> Profile: </h2>
+	<div class="form"> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<div id="profile-container">
+   		<image id="profileImage" src="pfp.png" />
+		</div>
+		<input id="imageUpload" type="file" name="profile_photo" placeholder="Photo" required="" capture>
+		<br>
+		<a> Username: </a>
+		<br>
+		<input type="text" class="profileUser" placeholder="TennisPlayer123">
+		<br>
+		<br>
+		<a> Biography: </a>
+		<br>
+		<input type="text" class="profileBio" placeholder="Hi! I am using VenueVulture">
+		<br>
+		<br>
+		<button onclick="location.href='HomePage.html';"> Submit </button>
+	</div>
+</body>
+</html>
